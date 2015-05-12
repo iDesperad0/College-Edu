@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>college edu</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="webstudent.css">
+<script src="jquery-1.8.0.min.js" charset="UTF-8" type="text/javascript"></script>
+
+<style type="text/css">
+
+  body {
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+  //  background: #2c4762;
+    background-color: #bee1f5;
+    background-image: url("img/body_bg.png");
+    background-repeat: repeat-x;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-smoothing: antialiased;
+    line-height: 1.5em;
+    text-rendering: optimizeLegibility;
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <div id="container" style="width:1080px;">
+
+  	<div class="top_logo"></div>
+  	
+    <div class="wrap" id="portal_nav">
+      <div id="portal">
+        <ul>
+        <li id="mo" class="current"><a href="index.html"><div class="nav-icon"></div><h3>主页</h3><small>Home</small></a></li>
+        <li id="ph"><a href="announcement.html"><div class="nav-icon"></div><h3>公告</h3><small>Announcement</small></a></li>
+        <li id="am"><a href="course_introduce.html"><div class="nav-icon"></div><h3>课程介绍</h3><small>Course Intro</small></a></li>
+        <li id="lv"><a href="course_choose.html"><div class="nav-icon"></div><h3>学生选课</h3><small>Course Choose</small></a></li>
+        <li id="en"><a href="result_search.html"><div class="nav-icon"></div><h3>成绩查询</h3><small>Result Search</small></a></li>
+        <div style="float:right; padding-right:10px;"><a id="logout" href="" title="注销">注&nbsp;&nbsp;&nbsp;销</a></div>
+        </ul>
+      </div>
+      <script>
+        var catsid=window.location.search.substr(1);
+        console.log(catsid.indexOf("catid"));
+        catsid=catsid.substr(catsid.indexOf("catid"));
+        var catid=catsid.split("=");
+        console.log(catid[1]);
+        switch(catid[1]){
+          case "3,4,24,30,36,26":jQuery("#mo").addClass("current");break;
+          case "8,35":jQuery("#ph").addClass("current");break
+          case "5,9":jQuery("#am").addClass("current");break;
+          case "7,11,21":jQuery("#lv").addClass("current");break;
+          case "22,19":jQuery("#en").addClass("current");break;
+        }
+        jQuery("#portal_nav ul li").each(function(){
+          console.log(jQuery(this));
+          console.log(!(jQuery(this).hasClass("current")));
+          if(!(jQuery(this).hasClass("current")))
+            jQuery(this).hover(function(){
+              jQuery(this).addClass("current");
+            },function(){
+              jQuery(this).removeClass("current");
+            })
+        });
+      </script>
+    </div>
+       
+    <div class="banner" style="height:450px; width:1050px;">
+
+      <div class="featuredbox" style="width:30%; height:410px; float:left; margin-left:20px;">
+        <div style="margin: 10px;">
+          <img src="img/announce_title.png">
+        </div>
+        <div class="hotfeaturedtext">
+          <table cellspacing="10" style="width: 100%">
+            <tr><td style="line-height: 18px; border-bottom: 1px #CCC dotted; padding-bottom: 6px;">
+              <a style="font-family: Microsoft YaHei;font-size: 15px;" href="">今年的体育课程结束了，下学期开！！！</a>
+            </td></tr>
+            <tr><td style="line-height: 18px; border-bottom: 1px #CCC dotted; padding-bottom: 6px;">
+              <a style="font-family: Microsoft YaHei;font-size: 15px;" href="">今年的体育课程结束了，下学期开！！！</a></td></tr>
+            <tr><td style="line-height: 18px; border-bottom: 1px #CCC dotted; padding-bottom: 6px;">
+              <a style="font-family: Microsoft YaHei;font-size: 15px;" href="">今年的体育课程结束了，下学期开！！！</a></td></tr>
+            <tr><td style="line-height: 18px; border-bottom: 1px #CCC dotted; padding-bottom: 6px;">
+              <a style="font-family: Microsoft YaHei;font-size: 15px;" href="">今年的体育课程结束了，下学期开！！！</a></td></tr>
+            <tr><td style="line-height: 18px; border-bottom: 1px #CCC dotted; padding-bottom: 6px;">
+              <a style="font-family: Microsoft YaHei;font-size: 15px;" href="">今年的体育课程结束了，下学期开！！！</a></td></tr>
+            <tr><td style="line-height: 18px; border-bottom: 1px #CCC dotted; padding-bottom: 6px;">
+              <a style="font-family: Microsoft YaHei;font-size: 15px;" href="">今年的体育课程结束了，下学期开！！！</a></td></tr>
+            <tr><td style="line-height: 18px; border-bottom: 1px #CCC dotted; padding-bottom: 6px;">
+              <a style="font-family: Microsoft YaHei;font-size: 15px;" href="">今年的体育课程结束了，下学期开！！！</a></td></tr>
+            <tr><td style="line-height: 18px; border-bottom: 1px #CCC dotted; padding-bottom: 6px;">
+              <a style="font-family: Microsoft YaHei;font-size: 15px;" href="">今年的体育课程结束了，下学期开！！！</a></td></tr>
+            <tr><td style="line-height: 18px; border-bottom: 1px #CCC dotted; padding-bottom: 6px;">
+              <a style="font-family: Microsoft YaHei;font-size: 15px;" href="">今年的体育课程结束了，下学期开！！！</a></td></tr>
+          </table>
+        </div> 
+      </div>
+
+       <div class="featuredbox" style="margin-left:35%; height:410px; margin-right:20px;">
+          <div style="margin: 10px;">
+            <img src="img/course_title.png">
+          </div> 
+          <!-- widget content -->
+          <div class="hotfeaturedtext">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>课程名称</th>
+                  <th>课程类型</th>
+                  <th>上课时间</th>
+                  <th>上课地点</th>
+                  <th>计划人数</th>                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>钢琴基础01</td>
+                  <td>贫困生</td>
+                  <td>2013/09/07 至 2013/10/20</td>
+                  <td>主教学楼</td>
+                  <td>48</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>钢琴基础02</td>
+                  <td>贫困生</td>
+                  <td>2013/09/07 至 2013/10/20</td>
+                  <td>主教学楼</td>
+                  <td>48</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>钢琴基础03</td>
+                  <td>贫困生</td>
+                  <td>2013/09/07 至 2013/10/20</td>
+                  <td>主教学楼</td>
+                  <td>48</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>钢琴基础04</td>
+                  <td>贫困生</td>
+                  <td>2013/09/07 至 2013/10/20</td>
+                  <td>主教学楼</td>
+                  <td>48</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>钢琴基础04</td>
+                  <td>贫困生</td>
+                  <td>2013/09/07 至 2013/10/20</td>
+                  <td>主教学楼</td>
+                  <td>48</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>钢琴基础04</td>
+                  <td>贫困生</td>
+                  <td>2013/09/07 至 2013/10/20</td>
+                  <td>主教学楼</td>
+                  <td>48</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>钢琴基础04</td>
+                  <td>贫困生</td>
+                  <td>2013/09/07 至 2013/10/20</td>
+                  <td>主教学楼</td>
+                  <td>48</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>钢琴基础04</td>
+                  <td>贫困生</td>
+                  <td>2013/09/07 至 2013/10/20</td>
+                  <td>主教学楼</td>
+                  <td>48</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- ./ widget content -->
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
